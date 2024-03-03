@@ -1,0 +1,27 @@
+-- DISTRICTS mod by MLK94
+-- v0.1 - 14 Jan 2024 - Very messy but somewhat functional. Lots of repetitive coding in the grid scripts to squish together. Data saving to mod storage instead of temporary session.
+-- v0.2 - 15 Jan 2024 - Code rewriting and squishing. Code breakages are lessening. Singleplayer testing was ok. 
+-- v0.3 - 18 Jan 2024 - HUD interfered with another mod's HUD so renamed things. Bit of code cleanup.
+-- v0.4 - 21 Jan 2024 - HUD was still interfering so it got a bit of a recode, now each player has a table entry for their HUDs and they should no longer clash with other HUDs.
+
+-- Labels certain areas of the map with a district name, not unlike states or shires/counties. 
+-- User is notified when entering a different district via HUD. (region name and sector, not grid location yet).
+-- Chatcommands: /districts (prints sector, grid location and region name in your chat window), /districts_name (naming regions) & /districts_list - a full district list by sector (currently admin but subject to change).
+-- Entire map carved up into 9x9 grid (7000x7000 blocks except districts crossing an axis have one 6000 dimension, central sector is 6000x6000 blocks).
+
+-- MY ADVICE IS TO TEST THIS EXTENSIVELY IN SINGLEPLAYER MODE BEFORE DEPLOYING ONTO A SERVER. 
+
+-- Can sometimes be problematic - moving between different regions quickly can cause the HUD to wipe faster than normal, making it hard to see where you just entered.
+-- temp override: //lua districts.names(sector) = "name").
+-- TO DO: HUD toggled via chatcommand - if a player wanted the region name, sector and grid location on-screen somewhere all the time.
+-- chat command - online player list with their current sectors/districts (admin).
+-- height based sectors, at the moment no y-coords are processed meaning a district reaches from the very top to the very bottom of the map. But expanding this will also make the name table many times bigger :-D
+-- complete clean up of the code, as it got a bit mangled when it didn't work to start with.
+-- The adjustable grid options can result in some serious issues. It might be work limiting it to a series of presets for, say 3x3, 5x5, 7x7, 9x9 (default) and others.
+-- Automatic boundary points were created in d20 and d31 but they gave nice rounded numbers. d9_default has manual tables rounded off and some sectors are smaller than others.
+-- does the map exceed 31000 in any direction??? if it does, we need to modify doundx(1) to -32000 and dboundx(31 or #dboundx) to 32000 to be absolutely sure.
+-- in sp (unmodified) the -x/-z went to -30912.2 and the x/z went to 30927.2, so probably not and we probably don't need to alter the min/max sizes until MT allows bigger maps.
+-- Probably needs serious garbage collection.
+-- Make sure you never use the same database table for different grid sizes. "sector_names_x" must be unique for each grid script available.
+-- I DO NOT ADVISE USING A GRID SIZE WITH ANYTHING BUT EQUAL X AND Z VALUES. PARTS OF THE CODE * MAY * BREAK AT THE MOMENT.
+
