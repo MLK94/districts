@@ -10,9 +10,9 @@ districts = {}
 -- UNCOMMENT ONE LINE FROM THE LIST BELOW TO CHOOSE THAT SIZE OF GRID FOR THE MAP --
 --
 
---dofile(MP.."/d9_default.lua")             -- 9x9 grid (81 sectors)
+dofile(MP.."/d9_default.lua")             -- 9x9 grid (81 sectors)
 --dofile(MP.."/d20.lua")                    -- 20x20 (400)
-dofile(MP.."/d31.lua")                      -- 31x31 (961)
+--dofile(MP.."/d31.lua")                      -- 31x31 (961)
 
 
 --------------------------------------------------------------------------------------------------------------
