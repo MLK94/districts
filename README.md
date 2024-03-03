@@ -1,5 +1,7 @@
 DISTRICTS - cover your entire map with district names, not unlike naming states or counties on a real map.
 
+![districts](https://github.com/MLK94/districts/blob/master/screenshot.png)
+
 This is a 'pre-release', it is currently running on a public server but it does need several changes to the code before a proper release.
 
 When a player moves into or out of a sector, if that sector has a different district name the player will be informed of the new district name and sector via a HUD that appears just above the centre of your screen. It does not inform the player if they change sector and it has the same name as the previous sector (for districts that span multiple sectors).
