@@ -1,6 +1,6 @@
 DISTRICTS - cover your entire map with district names, not unlike naming states or counties on a real map.
 
-![districts](https://github.com/MLK94/districts/blob/master/screenshot.png)
+![districts](https://github.com/MLK94/districts/blob/main/screenshot.png)
 
 This is a 'pre-release', it is currently running on a public server but it does need several changes to the code before a proper release.
 
