@@ -7,6 +7,9 @@ There are three sizes at the moment, selected by commenting out a page in the in
 When a player moves into or out of a sector, if that sector has a different district name the player will be informed of the new district name and sector via a HUD that appears just above the centre of your screen. It does not inform the player if they change sector and it has the same name as the previous sector (for districts that span multiple sectors).
 
 There are three chat commands to control the mod:
+
 /districts (no parameters) - Tells the user the name, sector number and grid location of the district they are in (via chat).
-/districts_name <sector> [<name>] - Sets the name of the district using its sector number. Leave name empty to wipe the district name.
+
+/districts_name (sector) [(name)] - Sets the name of the district using its sector number. Leave name empty to wipe the district name.
+
 /districts_list - Opens a formspec and shows all named sectors on the map.
