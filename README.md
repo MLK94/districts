@@ -1,4 +1,4 @@
-DISTRICTS - cover your entire map with district names, not unlike naming states or counties on a real map.
+#DISTRICTS - cover your entire map with district names, not unlike naming states or counties on a real map.
 
 ![districts](https://github.com/MLK94/districts/blob/main/screenshot.png)
 
