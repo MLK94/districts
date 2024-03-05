@@ -6,6 +6,8 @@ Inspired by AREAS, OTHER_WORLDS & the people who designed NY City :-p
 
 ![districts](https://github.com/MLK94/districts/blob/main/screenshot.png)
 
+![districts](https://github.com/MLK94/districts/blob/main/screenshot2.png)
+
 This is a 'pre-release', it is currently running on a public server but it does need several changes to the code before a proper release.
 
 When a player moves into or out of a sector, if that sector has a different district name the player will be informed of the new district name and sector via a HUD that appears just above the centre of your screen. It does not inform the player if they change sector and it has the same name as the previous sector (for districts that span multiple sectors).
