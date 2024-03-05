@@ -6,7 +6,7 @@ Inspired by AREAS, OTHER_WORLDS & the people who designed NY City :-p
 
 ![districts](https://github.com/MLK94/districts/blob/main/screenshot.png)
 
-![districts](https://github.com/MLK94/districts/blob/main/screenshot2.png)
+![districts](https://github.com/MLK94/districts/blob/main/screenshot_2.png)
 
 This is a 'pre-release', it is currently running on a public server but it does need several changes to the code before a proper release.
 
