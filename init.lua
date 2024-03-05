@@ -105,8 +105,10 @@ minetest.register_globalstep(function(dtime)
 			    	player:hud_change(districts.hud[pname].id,"text", hudtext)
 			end
 		    	minetest.after(districts.hudtime,function()
-		        player:hud_change(districts.hud[pname].id,"text","") -- Blank the HUD - The HUD stays active for your session and is only removed when you leave. This shouldn't cause an issue? Famous last words :-D
-		    	end)
+				if districts.hud[pname] and districts.hud[pname] ~= "" then
+					player:hud_change(districts.hud[pname].id,"text","") -- Blank the HUD - Ignore if player goes offline, otherwise it crashes the server with nil value.
+				end
+			end)
         	end
     	end
 end)
